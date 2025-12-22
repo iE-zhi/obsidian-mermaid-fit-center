@@ -1,0 +1,10 @@
+{
+    "id": "mermaid-auto-fit",
+    "name": "Mermaid Auto-Fit for PDF",
+    "version": "1.2.0",
+    "minAppVersion": "1.0.0",
+    "description": "Automatically resizes Mermaid diagrams to fit page width during PDF export (Fixes truncation in Better Export PDF).",
+    "author": "来网易云吃烧烤",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}
