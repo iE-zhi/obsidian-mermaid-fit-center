@@ -1,0 +1,35 @@
+/* Keep Mermaid diagrams centered without enlarging diagrams that already fit. */
+.markdown-preview-view .mermaid,
+.print .mermaid {
+	text-align: center;
+}
+
+.markdown-preview-view .mermaid > svg,
+.print .mermaid > svg {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin-inline: auto;
+}
+
+@media print {
+	.mermaid {
+		max-width: 100% !important;
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	.mermaid > svg {
+		display: block !important;
+		width: auto !important;
+		max-width: 100% !important;
+		height: auto !important;
+		margin-inline: auto !important;
+	}
+}
+
+/* Used briefly by the refresh command to trigger a synchronous reflow. */
+.mermaid-auto-fit-refresh {
+	contain: layout;
+}

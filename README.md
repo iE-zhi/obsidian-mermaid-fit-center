@@ -35,7 +35,7 @@ When exporting notes containing Mermaid diagrams (Flowcharts, Gantt charts, etc.
 2.  No settings required—it works automatically in the background.
 3.  Export your note to PDF.
 
-*(Optional)* If a diagram doesn't resize immediately in the preview, you can run the command `Smart Resize & Center Mermaid` from the Command Palette (`Ctrl/Cmd + P`).
+*(Optional)* If a diagram doesn't resize immediately in the preview, run `Refresh Mermaid layout` from the Command Palette (`Ctrl/Cmd + P`).
 
 ---
 
@@ -67,13 +67,21 @@ When exporting notes containing Mermaid diagrams (Flowcharts, Gantt charts, etc.
 2.  **零配置**：无需任何设置，插件会在后台自动处理 DOM。
 3.  直接导出 PDF 即可看到效果。
 
-*(可选)* 如果在某些预览界面发现图表没有即时更新，可以在命令面板 (`Ctrl/Cmd + P`) 中运行 `Smart Resize & Center Mermaid` 命令。
+*(可选)* 如果在某些预览界面发现图表没有即时更新，可以在命令面板 (`Ctrl/Cmd + P`) 中运行 `Refresh Mermaid layout` 命令。
 
 ## Installation / 安装
 
+### Obsidian Community Plugins / Obsidian 社区插件
+1. Open **Settings → Community plugins → Browse**.
+2. Search for **Mermaid Auto-Fit for PDF**, select it, and choose **Install**.
+3. Choose **Enable** after installation.
+
+> Community installation becomes available after the plugin is accepted into
+> Obsidian's community plugin directory. Until then, use one of the methods below.
+
 ### Manual Install / 手动安装
-1.  Download the `main.js`, `manifest.json`, and `styles.css` (if applicable) from the releases.
-2.  Create a folder named `mermaid-fit-center` inside your vault's `.obsidian/plugins/` directory.
+1.  Download `main.js`, `manifest.json`, and `styles.css` from the latest release.
+2.  Create a folder named `mermaid-auto-fit` inside your vault's `.obsidian/plugins/` directory.
 3.  Move the files into that folder.
 4.  Reload Obsidian and enable the plugin in Settings.
 
