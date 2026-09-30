@@ -90,5 +90,18 @@ When exporting notes containing Mermaid diagrams (Flowcharts, Gantt charts, etc.
 2.  Add this repository URL to BRAT.
 3.  Enable the plugin.
 
+## Publishing / 发布
+
+Maintainers can publish the current version entirely in the GitHub website:
+
+1. Open **Actions → Release plugin** in this repository.
+2. Select **Run workflow**, keep the `main` branch selected, and confirm.
+3. Verify that the resulting GitHub release contains `main.js`, `manifest.json`, and `styles.css`.
+4. Submit `iE-zhi/obsidian-mermaid-fit-center` through Obsidian's
+   [plugin submission page](https://obsidian.md/plugins?submit).
+
+The workflow reads the version from `manifest.json`, creates the matching tag and
+release, and replaces the three release assets when the same version already exists.
+
 ---
 **Enjoy your perfect PDFs!**
